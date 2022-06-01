@@ -79,7 +79,6 @@ function twoSum (nums, target) {
         if (m.has(y)){
             // console.log('m has', m.has(y))
             // if y is in the map we return the index of y and i, the current index
-            
             // console.log('[i, j]', [m.get(y), i])
             return [m.get(y), i]
         }
