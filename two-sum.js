@@ -13,7 +13,7 @@ Explanation: Because nums[0] + nums[1] == 9, we return [0, 1].
 let nums = [15,11,2,8,7]
 let target = 9
 
-function twoSum_ (nums, target) {
+function twoSum_(nums, target) {
     /*
      x+y = target -> x+y =9
      y = target -x
