@@ -36,6 +36,8 @@ function two_sum(nums: number[], target: number): number[] {
 */
     let m = new Map()
     for (let i = 0; i < nums.length; i++) {
+        // x = nums[i]
+        // y = target -x
         let y = target - nums[i]
        
         if (m.has(y)){
