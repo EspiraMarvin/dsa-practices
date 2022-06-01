@@ -1,9 +1,9 @@
 
 // let nums = [2,7,11,15]
-// let nums = [15,11,2,8,7]
-// let target = 9
+let nums = [15,11,2,8,7]
+let target = 9
 
-function two_sum_(nums: number[], target: number): number[] {
+function two_sum_(nums: number[], target: number): number[] | undefined {
         
 /*
     nums = [2,7,11,15], 
@@ -26,7 +26,10 @@ function two_sum_(nums: number[], target: number): number[] {
     }
 }
 
-function two_sum(nums: number[], target: number): number[] {
+
+// OPTIMIZED SOLUTIONS BELOW
+
+function two_sum(nums: number[], target: number): number[] | undefined {
 
 /*
     nums = [2,7,11,15], 
@@ -36,8 +39,6 @@ function two_sum(nums: number[], target: number): number[] {
 */
     let m = new Map()
     for (let i = 0; i < nums.length; i++) {
-        // x = nums[i]
-        // y = target -x
         let y = target - nums[i]
        
         if (m.has(y)){
@@ -52,4 +53,20 @@ function two_sum(nums: number[], target: number): number[] {
     }
 }
 
-// twoSum(nums, target)
+function two_sum_II (nums: number[], target: number): number[] | undefined {
+
+    let m = new Map()
+
+    for (const i in nums) {
+        let y =  target - nums[i]
+
+        if (m.has(y)) {
+            return [m.get(y), i]
+        }
+        m.set(nums[i], i)
+    }
+
+}
+
+
+two_sum(nums, target)
