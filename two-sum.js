@@ -71,10 +71,12 @@ MOST DATA STRUCTURES FOR SEARCHING WILL BE
 
 */
 
+// OPTIMIZED SOLUTIONS BELOW
+
 function twoSum (nums, target) {
     let m = new Map()
-    for (let i = 0; i < nums.length; i++) {
-        let y = target - nums[i]
+    // for (let i = 0; i < nums.length; i++) {
+    //     let y = target - nums[i]
        
         if (m.has(y)){
             // console.log('m has', m.has(y))
@@ -84,8 +86,19 @@ function twoSum (nums, target) {
         }
         //if y is not found in the map, add the number and its index to the map
         m.set(nums[i], i)
-    }
 }
 
+function twoSum_II(nums, target) {
+    let m = new Map()
+
+    for (const i in nums) {
+        let  y = target - nums[i]
+
+        if (m.has(y)) {
+            return [m.get(y), i]
+        }
+        m.set(nums[i], i)
+    }
+} 
 
 twoSum(nums, target)
