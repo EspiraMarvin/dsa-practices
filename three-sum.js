@@ -41,6 +41,11 @@ const threeSum = function(nums) {
 
             while(left < right) {
                 const currentSum = nums[i] + nums[left] + nums[right]
+                console.log('nums', nums[i])
+                console.log('nums[left]', nums[left])
+                console.log('nums[right]', nums[right])
+                console.log('currentSum', currentSum)
+               
                 if(currentSum === 0) {
                     triplets.push([nums[i], nums[left], nums[right]])
                     while(nums[left] == nums[left + 1]) left ++
