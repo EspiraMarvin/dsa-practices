@@ -9,3 +9,10 @@ eg.
  isPoweOfTwo(5) = false -
 
 */
+
+function powerOfTwo(n) {
+
+    
+}
+
+console.log(powerOfTwo(5))
