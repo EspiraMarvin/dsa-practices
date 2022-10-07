@@ -36,7 +36,5 @@ console.log('linearSearch 20', linearSearch([-5,2, 10, 4, 6], 20)) // -1
 
 
 /*
-BIG-O - O(n) linear time complexity, as the size of the array increases the no of times the if condition increases
-
-
+    BIG-O - O(n) linear time complexity, as the size of the array increases the no of times the if condition increases
 */
