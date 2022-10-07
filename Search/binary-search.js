@@ -11,6 +11,13 @@
     arr = [-5,2, 10, 4, 6], t=6 -> should return 4
     arr = [-5,2, 10, 4, 6], t=10 -> should return -1
 */
+/**
+ * If array is empty return -1
+ * If array has elements, find the middle element in the array,
+ * if target is equal to the middle element, return the middle element index
+ * If target is less than the middle element, binary search left half of the arr
+ * If target is greater than the middle element, binary search right half of the arr
+ */ 
 
 function binarySearch(arr, target) {
     // const sortedArr = arr.sort((a, b) => a -b) // we don't need to sort as this arr is already sorted

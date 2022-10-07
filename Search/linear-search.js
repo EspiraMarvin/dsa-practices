@@ -11,7 +11,6 @@
 */
 
 
-
 function linearSearch(arr, target) {
     for (let i=0; i < arr.length; i++) {
         if (arr[i] === target){
@@ -21,13 +20,13 @@ function linearSearch(arr, target) {
     return -1
 }
 
-function linearSearchh(arr, target) {
-    if (arr.indexOf(target)){
-        return arr.indexOf(target)
-    } else {
-        return -1
-    }
-}
+// function linearSearchh(arr, target) {
+//     if (arr.indexOf(target)){
+//         return arr.indexOf(target)
+//     } else {
+//         return -1
+//     }
+// }
 
 console.log('linearSearch 2', linearSearch([-5,2, 10, 4, 6], 10)) // 2
 console.log('linearSearch 6', linearSearch([-5,2, 10, 4, 6], 6)) // 4
