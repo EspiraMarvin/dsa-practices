@@ -5,7 +5,7 @@
 #### 2. Constant time complexity    - O(1)
 #### 3. Quadratic time complexity   - O(n^2)
 #### 4. Cubic time complexity       - O(n^3)
-#### 5. Logarithmic time complexity - O(logn)
+#### 5. Logarithmic time complexity - O(logn) - input size reduced by half - O(logn)
 
 
 BIG-O GUIDE

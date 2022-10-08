@@ -18,11 +18,11 @@ function twoSum_(nums, target) {
      x+y = target -> x+y =9
      y = target -x
     */
-     for (i = 0; i < nums.length; i++) {
-         for (j = 0; j < nums.length - 1; j++) {
+     for (let i = 0; i < nums.length; i++) {
+         for (let j = 0; j < nums.length - 1; j++) {
              // x = nums[i]
              // find y -> y = target - x
-             y = target - nums[i]
+             let y = target - nums[i]
 
              if (y === nums[j])  {
                 //  console.log('[i, j]', [i , j])

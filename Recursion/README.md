@@ -8,3 +8,7 @@
 #### 1. Every recursive solution needs to have a base case/ a condition to terminate the recursion
 #### 2. Recursion might simplfy solution the problem, but it doeesn't always translate to a faster solution. A recursive solution may be far worse than an iterative solution
  
+
+
+ ## Tips for Recursion Solutions
+ -> Figure out how to break down the problem into smaller versions of the same problem, identify the base case for recursion
