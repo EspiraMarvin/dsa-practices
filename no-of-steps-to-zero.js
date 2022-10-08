@@ -42,7 +42,6 @@ console.log("numberOfSteps", numberOfSteps(8)) // output
 // using bitwise
 
 function numberOfStepsBitwise (num) {
-
     let steps = 0
     while(num > 0) {
         if ((num & 1) == 0) {   
