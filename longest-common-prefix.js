@@ -24,14 +24,27 @@ Constraints:
 
 function longestCommonPrefix(strs) {
     // if(strs.length === 0) return ''
+
     return strs.reduce((prev, next) => {
         let i = 0;
-        while (prev[i] && next[i] && prev[i] === next[i]) i++
+        // console.log('prev[i]', prev[i])
+        // console.log('next[i]', next[i])
+
+        while (prev[i] && next[i] && prev[i] === next[i]) {
+            i++
+        } 
         return prev.slice(0, i) 
     })
 
 }
-console.log('longestCommonPrefix', longestCommonPrefix(["flower","flow","flight"])) // output "flo"
+console.log('longestCommonPrefix', longestCommonPrefix(["flower","flow","flight"])) // output "fl"
 
 console.log('longestCommonPrefix', longestCommonPrefix(["dog","racecar","car"])) // output ""
 
+console.log('longestCommonPrefix', longestCommonPrefix(["flower","flow"])) // output "flow"
+
+
+
+// time complexity O(mn))
+
+// Space complexity: O(1) - no additional space
