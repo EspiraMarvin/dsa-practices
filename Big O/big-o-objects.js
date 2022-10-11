@@ -22,3 +22,7 @@ Object.entries()-O(n) returns an array of all the key value pairs
 
 
 */
+console.log(Object.keys(person));
+console.log(Object.values(person));
+console.log(Object.entries(person));
+

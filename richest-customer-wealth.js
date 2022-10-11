@@ -1,20 +1,21 @@
-// function maximumWealth(accounts: number[][]): number {
-// let arrW= []
-//     for(let i=0;i<accounts.length;i++){
-//         let sumWealth = accounts[i].reduce((acc: number, cur: number):any =>  acc + cur)
-//         arrW.push(sumWealth)
-//     }
-//     return Math.max(...arrW)
-// }
 function maximumWealth(accounts) {
-    var arrWealth = [];
-    for (var i = 0; i < accounts.length; i++) {
-        var sumWealth = accounts[i].reduce(function (acc, cur) { return acc + cur; });
-        arrWealth.push(sumWealth);
+let arrW= []
+    for(let i=0;i<accounts.length;i++){
+        let sumWealth = accounts[i].reduce((acc, cur) => acc + cur)
+        arrW.push(sumWealth)
     }
-    return Math.max.apply(Math, arrWealth);
+    return Math.max(...arrW)
 }
-;
+
+// function maximumWealth(accounts) {
+//     let arrWealth = [];
+//     for (let i = 0; i < accounts.length; i++) {
+//         let sumWealth = accounts[i].reduce((acc, cur) => acc + cur);
+//         arrWealth.push(sumWealth);
+//     }
+//     return Math.max.apply(Math, arrWealth);
+// };
+
 console.log('maximumWealth', maximumWealth([[1, 5], [7, 3], [3, 5]]));
 /*  // Output: 10
 Explanation:

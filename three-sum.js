@@ -25,7 +25,6 @@ Output: [[-1,-1,2],[-1,0,1]]
 */
 
 const threeSum = function(nums) {
-   nums.sort((a, b) => a - b) // sort in ascending order
    let sorted =  nums.sort((a, b) => a - b) // sort in ascending order
    console.log('sorted', sorted)
     const triplets = []
