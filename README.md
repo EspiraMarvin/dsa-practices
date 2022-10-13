@@ -7,6 +7,7 @@
 #### 4. Cubic time complexity       - O(n^3)
 #### 5. Logarithmic time complexity - O(logn) - input size reduced by half - O(logn)
 
+<br />
 
 ##### BIG-O GUIDE
 
@@ -14,6 +15,7 @@
 ###### 2. nested loop -O(n^2)
 ###### 3. Logarithmic O(log n) input size reduced by half
 
+<br />
 
 ### BIG-O SPACE COMPLEXITY
 
