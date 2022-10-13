@@ -13,3 +13,8 @@
 #### 1. Bubble sort
 
 ![Bubble sort](./buble-sort.png)
+
+
+#### 2. Insertion sort
+
+![Insertion sort](./insertion-sort.png)
