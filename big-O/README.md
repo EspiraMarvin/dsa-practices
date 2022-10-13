@@ -8,11 +8,18 @@
 #### 5. Logarithmic time complexity - O(logn)
 
 
-BIG-O GUIDE
+##### BIG-O GUIDE
 
 1. loop - O(n)
 2. nested loop -O(n^2)
 3. Logarithmic O(log n) input size reduced by half
 
+
+
+##### SPACE COMPLEXITY
+1. Constant - O(1) -no extra space/memory needed when input size increases
+2. Linear   - O(n) - extra space neede when input size increases
+3. Logarithmic -O(log n) - extra space needed grows but not at the same rate as the input size
+4. Quadratic - you should try to avoid
 
 ![BIG-O GUIDE](../imgs/BIG-0-CHART.png)
