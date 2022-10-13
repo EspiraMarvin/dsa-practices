@@ -13,3 +13,6 @@ BIG-O GUIDE
 1. loop - O(n)
 2. nested loop -O(n^2)
 3. Logarithmic O(log n) input size reduced by half
+
+
+![BIG-O GUIDE](./BIG-0-CHART.png)
