@@ -32,8 +32,10 @@ function binarySearch(arr, target) {
             // console.log('middleIndex', middleIndex)
             return middleIndex
         } else if (arr[middleIndex] < target){
+        // left half of the arr
             leftIndex = middleIndex + 1
         } else {
+        // right half of the arr
             rightIndex = middleIndex - 1
         }
     }

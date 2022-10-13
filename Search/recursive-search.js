@@ -29,9 +29,11 @@ function search(arr, target, leftIndex, rightIndex) {
     }
 
     if (target < arr[middleIndex]) {
+        //left half of the arr
         // rightIndex = arr[middleIndex] - 1
         return search(arr, target, leftIndex, middleIndex - 1)
     } else {
+        //right half of the arr
         // leftIndex = arr[middleIndex] + 1
         return search(arr, target, middleIndex + 1, rightIndex)
     }
