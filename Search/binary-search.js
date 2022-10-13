@@ -21,20 +21,20 @@
 
 function binarySearch(arr, target) {
     // const sortedArr = arr.sort((a, b) => a -b) // we don't need to sort as this arr is already sorted
-    let firstIndex=0
-    let lastIndex=arr.length - 1
+    let leftIndex=0
+    let rightIndex=arr.length - 1
 
-    while(firstIndex <= lastIndex) {
-        let middleIndex = Math.floor((firstIndex + lastIndex) / 2)
+    while(leftIndex <= rightIndex) {
+        let middleIndex = Math.floor((leftIndex + rightIndex) / 2)
         // console.log('middleIndex', middleIndex)
 
         if (arr[middleIndex] === target){
             // console.log('middleIndex', middleIndex)
             return middleIndex
         } else if (arr[middleIndex] < target){
-            firstIndex = middleIndex + 1
+            leftIndex = middleIndex + 1
         } else {
-            lastIndex = middleIndex - 1
+            rightIndex = middleIndex - 1
         }
     }
     return -1
@@ -52,5 +52,6 @@ console.log('binarySearch 20', binarySearch([-5,2, 4, 6, 10], 20)) // -1
 
 
 /*
-    BIG-O - O(logn) - input size reduced by half 
+    time complexity - BIG-O - O(logn) - input size reduced by half 
+    space complexity - constant - no additional data structure used
 */
