@@ -20,37 +20,39 @@
 */
 
 // asc order/ default
-function quickSort(arr) {
-    for(let i=0; i < arr.length; i++){
-        let numberToInsert = arr[i] // ele to sort
-        let j = i-1 // index of the sorted element
-        // ensure sorted element is greater than the numberToInsert
-        while(j >= 0 && arr[j] > numberToInsert) {
-            arr[j+1] = arr[j] // shift to the right by 1
-            j = j-1           // decrease idx of sorted ele by 1 while comparing(if arr[i] > numberToInsert)
+function quickSort(arr) { 
+    if (arr.length < 2) return arr
+    let pivot = arr.length -1 // pivot elem / last elem
+    let left = []
+    let right = []
+    for( let i = 0; i < arr.length-1; i++) {
+        if (arr[i] < pivot) {
+            left.push(arr[i])   
+        } else {
+            right.push(arr[i])
         }
-        arr[j+1] = numberToInsert // if current no. is less than numberToInsert (arr[i] < numberToInsert) insert the numberToInsert after the current no.
-    } 
-    return arr
+    }
+    return [...quickSort(left),pivot,...quickSort(right)]
 }
 
  console.log('quickSort', quickSort([-6, 20, 8, -2, 4])) // output [-6, -2, 4, 8, 20
  console.log('quickSort', quickSort([-8, 20, -2, 4, -6])) // output [-8, -6, -2, 4, 20]
 
 
- // desc order
+ // desc order / reverse sorted
  function quickSortDesc(arr) {
-    for(let i=0; i < arr.length; i++){
-        let numberToInsert = arr[i] // ele to sort
-        let j = i-1 // index of the sorted element
-        // ensure sorted element is greater than the numberToInsert
-        while(j >= 0 && arr[j] < numberToInsert) {
-            arr[j+1] = arr[j] // shift to the right by 1
-            j = j-1           // decrease idx of sorted ele by 1 while comparing(if arr[i] > numberToInsert)
+    if(arr.length < 2) return
+    let pivot = arr.length -1
+    let left = []
+    let right = []
+    for(let i=0; i<arr.length-1; i++){
+        if(arr[i] > pivot){
+            right.push(arr[i])
+        } else {
+            left.push(arr[i])
         }
-        arr[j+1] = numberToInsert // if current no. is less than numberToInsert (arr[i] < numberToInsert) insert the numberToInsert after the current no.
-    } 
-    return arr
+    }
+    return[...quickSort(left),pivot, ...quickSort(right)]
 }
 
 
@@ -62,8 +64,11 @@ console.log('quickSortDesc', quickSortDesc([-8, 20, -2, 4, -6])) // output [20, 
 
 /*
  BIG-O 
-    time complexity - O(n^2) / Quadratic - has 2 next nested loop 
+    time complexity (2)
+    a - worst case - O(n^2) / Quadratic - has 2 next nested loop 
        - as the no of elements in the arr increases, the no of comparison increases by square the number
 
-    space complexity - constant - no additional data structure used
+    b- average case complexity - O(nlogn) - we continuously/recursively divide the array into smaller arrays log(n), we also have a for-loop which is O(n) -> log(n)+ O(n) = O(nlogn)
+
+    space complexity -  -  additional data structure used
 */
