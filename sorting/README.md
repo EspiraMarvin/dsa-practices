@@ -31,4 +31,5 @@
 #### 4. Merge sort
 
 <img src="../imgs/merge-sort-idea.png">
-<img src="../imgs/merge-sort.png">
+<img src="../imgs/merge-sort-1.png">
+<img src="../imgs/merge-sort-2.png">
