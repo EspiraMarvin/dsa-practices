@@ -8,17 +8,25 @@
 
 #### 4. Merge sort
 
-
+<hr>
 
 #### 1. Bubble sort
 
-![Bubble sort](./buble-sort.png)
+<img src="./bubble-sort-idea.png" width="49%">
+<img src="./bubble-sort.png" width="50%">
 
 
 #### 2. Insertion sort
 
-![Insertion sort](./insertion-sort.png)
+<img src="./insertion-sort-idea.png" width="49%">
+<img src="./insertion-sort.png" width="50%">
 
 #### 3. Quick sort
 
-![Quick sort](./quick-sort.png)
+<img src="./quick-sort-idea.png" width="49%">
+<img src="./quick-sort.png" width="50%">
+
+#### 4. Merge sort
+
+<img src="./merge-sort-idea.png" width="49%">
+<img src="./merge-sort.png" width="50%">
