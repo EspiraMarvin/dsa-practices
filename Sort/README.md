@@ -12,21 +12,21 @@
 
 #### 1. Bubble sort
 
-<img src="./bubble-sort-idea.png" width="49%">
-<img src="./bubble-sort.png" width="50%">
+<img src="../imgs/bubble-sort-idea.png" width="49%">
+<img src="../imgs/bubble-sort.png" width="50%">
 
 
 #### 2. Insertion sort
 
-<img src="./insertion-sort-idea.png" width="49%">
-<img src="./insertion-sort.png" width="50%">
+<img src="../imgs/insertion-sort-idea.png" width="49%">
+<img src="../imgs/insertion-sort.png" width="50%">
 
 #### 3. Quick sort
 
-<img src="./quick-sort-idea.png" width="49%">
-<img src="./quick-sort.png" width="50%">
+<img src="../imgs/quick-sort-idea.png" width="49%">
+<img src="../imgs/quick-sort.png" width="50%">
 
 #### 4. Merge sort
 
-<img src="./merge-sort-idea.png" width="49%">
-<img src="./merge-sort.png" width="50%">
+<img src="../imgs/merge-sort-idea.png" width="49%">
+<img src="../imgs/merge-sort.png" width="50%">
