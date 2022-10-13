@@ -16,7 +16,7 @@
 
 
 
-##### SPACE COMPLEXITY
+### BIG-O SPACE COMPLEXITY
 
 #### 1. Constant - O(1) -no extra space/memory needed when input size increases
 #### 2. Linear   - O(n) - extra space neede when input size increases
