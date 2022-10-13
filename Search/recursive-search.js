@@ -43,3 +43,10 @@ function search(arr, target, leftIndex, rightIndex) {
 console.log('recursiveBinarySearch', recursiveBinarySearch([-5,2, 4, 6, 10], 10)) // 4
 console.log('recursiveBinarySearch', recursiveBinarySearch([-5,2, 4, 6, 10], 6)) //  3
 console.log('recursiveBinarySearch', recursiveBinarySearch([-5,2, 4, 6, 10], 20)) // -1
+
+
+
+/*
+    time complexity - BIG-O - O(logn) - input size reduced by half 
+    space complexity - constant - no additional data structure used
+*/
