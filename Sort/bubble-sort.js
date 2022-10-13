@@ -57,7 +57,8 @@ console.log('bubbleSortDesc', bubbleSortDesc([-8, 20, -2, 4, -6])) // output [20
 
 
 /*
-    time complexity - BIG-O - O(n^2) - has 2 next nested loop 
+BIG-O
+    time complexity - O(n^2) / Quadratic- has 2 next nested loop 
        - as the no of elements in the arr increases, the no of comparison increases by square the number
 
     space complexity - constant - no additional data structure used
