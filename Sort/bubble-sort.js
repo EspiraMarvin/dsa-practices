@@ -16,8 +16,7 @@ function bubbleSort(arr) {
         swapped = false
         for (let i=0; i<arr.length-1;i++){
             if(arr[i] > arr[i+1]){
-                let temp;
-                temp = arr[i]
+                let temp = arr[i]
                 arr[i] = arr[i+1]
                 arr[i+1] = temp
                 // [arr[i], arr[i+1]] = [arr[i+1], arr[i]] // or you can use destructuring assignment
