@@ -1,4 +1,6 @@
 /**
+ *  Bubble sort
+ * 
  *  Given an array of integers, sort the array in asc order
  * 
  * const arr = [-6, 20, 8, -2, 4]
