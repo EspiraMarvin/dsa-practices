@@ -68,11 +68,10 @@ console.log('mergeSortDesc', mergeSortDesc([-8, 20, -2, 4, -6])) // output [20, 
 
 /*
  BIG-O 
-    time complexity (2)
-    a - worst case - O(n^2) / Quadratic - has 2 next nested loop 
-       - as the no of elements in the arr increases, the no of comparison increases by square the number
+  time complexity - O(nlogn) - the best time complexity you can get while sorting
+    - log(n) for dividing problem into halves
+    - O(n) a loop for merge the arrays
+    log(n) + O(n) = O(nlogn)
 
-    b- average case complexity - O(nlogn) - we continuously/recursively divide the array into smaller arrays log(n), we also have a for-loop which is O(n) -> log(n)+ O(n) = O(nlogn)
-
-    space complexity -  -  additional data structure used
+    space complexity - constant no additional data structure used
 */
