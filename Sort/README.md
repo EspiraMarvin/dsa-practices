@@ -18,3 +18,7 @@
 #### 2. Insertion sort
 
 ![Insertion sort](./insertion-sort.png)
+
+#### 3. Quick sort
+
+![Quick sort](./quick-sort.png)
