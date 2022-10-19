@@ -32,7 +32,6 @@ function summation(n) {
 function sum(n) {
     return (n * (n+1)) / 2;    // line 2
 }
-
 console.log('res', sum(4))
 
 
@@ -43,7 +42,6 @@ for(i =1; i <=n; i++){
         // some code
     }
 }
-
 
 
 //time complexity O(n^3) - CUBIC time complexity - if there are 3 nested loops
