@@ -15,14 +15,14 @@ var uniqueInOrder = function (iterable) {
 
   for (let i = 0; i < iterable.length; i++) {
     if (iterable[i - 1] === undefined) {
-      // if (i === 0)
+      // check the first index and add it to the Arr   same as if (i === 0) 
       Arr.push(iterable[i])
       continue
     }
-    if (iterable[i - 1] === iterable[i]) {
+    if (iterable[i - 1] === iterable[i]) { // check if the prev index value is the same as the current index value. if its the same skip the current value
       continue
     } else {
-      Arr.push(iterable[i])
+      Arr.push(iterable[i])   // if else the prev value is not equal to the current value add it to the Arr
     }
   }
 
