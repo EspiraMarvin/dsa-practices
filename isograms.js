@@ -12,21 +12,30 @@ isIsogram "aba" = false
  */
 
 function isIsogram(str) {
-  let obj = new Set()
+  let obj = new Set() // use a set/object
 
   for (let i = 0; i < str.length; i++) {
-    if (obj.has(str[i])) {
+    // loop over the string
+    if (obj.has(str[i].toLowerCase())) {
+      /* 
+      check if obj has a string as you iterate, converting each str value to lowercase for uniformity
+       if obj has that string means its not an isIsogram, return false
+       */
       //   console.log("obj has", str[i])
       return false
     } else {
       //   console.log("obj lacks", str[i])
-      obj.add(str[i])
+      obj.add(str[i].toLowerCase())
+      //  else if obj lacks the str add it to the obj and continue the loop
     }
   }
+  //   console.log("obj after interation", obj)
 
-  return true
+  return true // after iterating return true, meaning to letters we found to equal the other in a set, hence an isIsogram
 }
 
 console.log("isIsogram", isIsogram("Dermatoglyphics")) // true
+console.log("isIsogram", isIsogram("isogram")) // true
+console.log("isIsogram", isIsogram("moOse")) // false
 console.log("isIsogram", isIsogram("moose")) // false
 console.log("isIsogram", isIsogram("aba")) // false
