@@ -43,7 +43,7 @@ Recursion is not a solution to fibonacci sequence problem
  */
 const fibMemoized = (n, memo = {}) => {
   if (n in memo) return memo[n]
-  if (n <= 2) return 1
+  if (n < 2) return n
   memo[n] = fibMemoized(n - 1, memo) + fibMemoized(n - 2, memo)
   return memo[n]
 }
