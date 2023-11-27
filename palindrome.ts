@@ -9,8 +9,7 @@ Input: x = -121
 Output: false 
 */
 function isPalindrome(x: number): boolean {
-    if (x < 0) return false
-    let reverse = 0;
-    for (let i=x; i >= 1; i=Math.floor(i/10))
-    return reverse === x
+  if (x < 0) return false
+  let reverse = 0
+  for (let i = x; i >= 1; i = Math.floor(i / 10)) return reverse === x
 }
