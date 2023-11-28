@@ -13,38 +13,36 @@
 */
 
 function recursiveBinarySearch(arr, target) {
-    // search(arr, target, leftIndex = 0, rightIndex = arr.length - 1)
-    return search(arr, target, 0,  arr.length - 1)
+  // search(arr, target, leftIndex = 0, rightIndex = arr.length - 1)
+  return search(arr, target, 0, arr.length - 1)
 }
 
 function search(arr, target, leftIndex, rightIndex) {
-    if (leftIndex > rightIndex) { // means we don't have any more elements in the arr
-        return -1
-    }
+  if (leftIndex > rightIndex) {
+    // means we don't have any more elements in the arr
+    return -1
+  }
 
-    let middleIndex = Math.floor((leftIndex + rightIndex) / 2)
+  let middleIndex = Math.floor((leftIndex + rightIndex) / 2)
 
-    if (target === arr[middleIndex]) {
-        return middleIndex
-    }
+  if (target === arr[middleIndex]) {
+    return middleIndex
+  }
 
-    if (target < arr[middleIndex]) {
-        //left half of the arr
-        // rightIndex = arr[middleIndex] - 1
-        return search(arr, target, leftIndex, middleIndex - 1)
-    } else {
-        //right half of the arr
-        // leftIndex = arr[middleIndex] + 1
-        return search(arr, target, middleIndex + 1, rightIndex)
-    }
-
+  if (arr[middleIndex] < target) {
+    // target is in the right half of the arr
+    // leftIndex = arr[middleIndex] + 1
+    return search(arr, target, middleIndex + 1, rightIndex)
+  } else {
+    // target is in the left half of the arr
+    // rightIndex = arr[middleIndex] - 1
+    return search(arr, target, leftIndex, middleIndex - 1)
+  }
 }
 
-console.log('recursiveBinarySearch', recursiveBinarySearch([-5,2, 4, 6, 10], 10)) // 4
-console.log('recursiveBinarySearch', recursiveBinarySearch([-5,2, 4, 6, 10], 6)) //  3
-console.log('recursiveBinarySearch', recursiveBinarySearch([-5,2, 4, 6, 10], 20)) // -1
-
-
+console.log("recursiveBinarySearch", recursiveBinarySearch([-5, 2, 4, 6, 10], 10)) // 4
+console.log("recursiveBinarySearch", recursiveBinarySearch([-5, 2, 4, 6, 10], 6)) //  3
+console.log("recursiveBinarySearch", recursiveBinarySearch([-5, 2, 4, 6, 10], 20)) // -1
 
 /*
     time complexity - BIG-O - O(logn) - input size reduced by half 
